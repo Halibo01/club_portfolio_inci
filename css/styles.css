@@ -1,0 +1,209 @@
+/* Logo temalı: altın, inci, kabuk renkleri */
+:root {
+  --gold: #D4AF37;
+  --pearl: #F8D7DA;
+  --shell: #C0B8B0;
+  --cream: #FDF2E3;
+  --accent: var(--gold);
+  --muted: #8B7355;
+  --bg: linear-gradient(135deg, var(--cream), #FFF8F0);
+  --card: #FFFFFF;
+  --shadow: 0 4px 12px rgba(212, 175, 55, 0.1);
+}
+*{box-sizing:border-box}
+body {
+  font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  background: var(--bg);
+  color: #333;
+  line-height: 1.6;
+}
+.container{max-width:1000px;margin:0 auto;padding:1rem}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  position: relative;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.logo{margin:0;font-size:1.1rem}
+.nav{display:flex;gap:1rem}
+.nav a{color:inherit;text-decoration:none;padding:0.25rem 0}
+.nav-toggle{display:none;background:none;border:0;font-size:1.4rem}
+
+.hero {
+  background: linear-gradient(120deg, var(--pearl), var(--cream));
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><radialGradient id="g" cx="50%" cy="50%"><stop offset="0%" stop-color="%23F8D7DA" stop-opacity="0.3"/><stop offset="100%" stop-color="%23FDF2E3"/></radialGradient></defs><rect width="100" height="100" fill="url(%23g)"/></svg>') repeat;
+  opacity: 0.5;
+}
+.hero h2{margin:0 0 .5rem}
+.btn {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--gold), #E8B923);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+}
+
+.section{padding:2rem 0}
+.events-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+.event {
+  background: var(--card);
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.event:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(212, 175, 55, 0.2);
+  border-color: rgba(212, 175, 55, 0.3);
+}
+.event::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--gold), #E8B923);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.event:hover::before {
+  transform: scaleX(1);
+}
+.event h4{
+  margin: .25rem 0 .5rem 0;
+  color: #4A3F35;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+.event-link{
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  padding: 4px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(212, 175, 55, 0.05));
+}
+.event-link:hover{
+  color: var(--gold);
+  background: linear-gradient(135deg, var(--gold), #E8B923);
+  border-color: var(--gold);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(212, 175, 55, 0.4);
+  text-decoration: none;
+}
+.event-link:active{
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.3);
+}
+
+
+.members-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}
+.member-card {
+  background: var(--card);
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(248, 215, 218, 0.2);
+}
+.member-card img{width:100%;height:140px;object-fit:cover;border-radius:6px}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px}
+.gallery-grid img{width:100%;height:160px;object-fit:cover;border-radius:6px}
+
+.contact-form{display:grid;gap:.5rem;max-width:540px}
+.contact-form label{display:flex;flex-direction:column;font-size:.95rem}
+.contact-form input,.contact-form textarea{padding:.5rem;border:1px solid #ddd;border-radius:6px}
+.form-result{margin-top:.5rem;color:var(--muted)}
+
+.site-footer {
+  border-top: 2px solid rgba(212, 175, 55, 0.3);
+  margin-top: 3rem;
+  padding: 2rem 0;
+  background: rgba(253, 242, 227, 0.8);
+}
+.site-footer p{margin:0}
+.socials a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: var(--gold);
+  font-weight: 500;
+}
+.socials a:hover { color: var(--pearl); }
+
+@media (max-width:720px){
+  .nav{position:fixed;right:0;top:60px;background:var(--card);flex-direction:column;padding:1rem;border-left:1px solid #eee;display:none}
+  .nav.show{display:flex}
+  .nav-toggle{display:block}
+  .header-inner{gap:.5rem}
+}
+
+/* küçük görünümler için container padding */
+@media (max-width:420px){
+  .container{padding:0.75rem}
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #4A3F35;
+}
+h1.logo {
+  font-size: 1.5rem;
+  margin: 0;
+  background: linear-gradient(135deg, var(--gold), #E8B923);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.header-logo {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+.header-logo:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+@media (max-width: 720px) {
+  .header-logo {
+    width: 40px;
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "events":[
+        {
+            "title": "hello world",
+            "date": "4-5 Aralık 2025",
+            "desc": "hello world",
+            "link": "https://example.com"
+        },
+        {
+            "title": "Yazılım Atölyesi",
+            "date":"10 Aralık 2025", 
+            "desc": "Modern web uygulamaları - React ve Node.js",
+            "link": "https://example.com"
+        }
+    ]
+}

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>İnci Gençlik Topluluğu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400..700;1,400..700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="images/logo.png" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">İnci Gençlik Topluluğu</h1>
+      <div class="header-right">
+        <button id="navToggle" class="nav-toggle" aria-label="Menüyü aç">☰</button>
+        <img src="images/logo.svg" alt="İnci Gençlik Topluluğu" class="header-logo">
+      </div>
+      <nav id="nav" class="nav">
+        <a href="#about">Hakkında</a>
+        <a href="#events">Etkinlikler</a>
+        <a href="#members">Üyeler</a>
+        <a href="#gallery">Galeri</a>
+        <a href="#contact">İletişim</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Hoş geldiniz İnci Gençlik!</h2>
+        <p>Gençlik enerjisiyle bilim, teknoloji ve sosyal etkinliklerde buluşuyoruz.</p>
+        <a class="btn" href="#contact">Katıl</a>
+      </div>
+    </section>
+
+    <section id="about" class="container section">
+      <h3>Hakkımızda</h3>
+      <p>İnci Gençlik Topluluğu, üniversite öğrencilerinin yeteneklerini geliştirmesine, projeler üretmesine ve ağ kurmasına yardımcı gönüllü bir topluluktur. Atölyeler, seminerler ve eğlenceli etkinlikler düzenliyoruz.</p>
+    </section>
+
+    <section id="events" class="container section">
+      <h3>Yaklaşan Etkinlikler</h3>
+      <div id="eventsList" class="events-grid">
+        <!-- JS ile doldurulacak -->
+      </div>
+    </section>
+
+    <section id="members" class="container section">
+      <h3>Öne Çıkan Üyeler</h3>
+      <div class="members-grid">
+        <div class="member-card">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=60" alt="Üye">
+          <h4>Ahmet Yılmaz</h4>
+          <p>Başkan - Yazılım</p>
+        </div>
+        <div class="member-card">
+          <img src="https://images.unsplash.com/photo-1545996124-1b45d6e7d76b?w=400&q=60" alt="Üye">
+          <h4>Elif Demir</h4>
+          <p>Etkinlik Sorumlusu</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="container section">
+      <h3>Galeri</h3>
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?w=800&q=60" alt="Galeri 1">
+        <img src="https://images.unsplash.com/photo-1496318447583-f524534e9ce1?w=800&q=60" alt="Galeri 2">
+        <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=800&q=60" alt="Galeri 3">
+      </div>
+    </section>
+
+    <section id="contact" class="container section">
+      <h3>İletişim</h3>
+      <p>Bize ulaşmak için formu doldurun veya doğrudan e-posta gönderin: <a href="mailto:kulup@example.com">kulup@example.com</a></p>
+      <form id="contactForm" class="contact-form">
+        <label>Ad Soyad
+          <input type="text" name="name" id="name" required />
+        </label>
+        <label>E-posta
+          <input type="email" name="email" id="email" required />
+        </label>
+        <label>Mesaj
+          <textarea name="message" id="message" rows="4" required></textarea>
+        </label>
+        <button type="submit" class="btn">Gönder</button>
+        <p id="formResult" class="form-result" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> İnci Gençlik Topluluğu — Tüm hakları saklıdır.</p>
+      <div class="socials">
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

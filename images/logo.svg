@@ -1,0 +1,19 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Altın çerçeve -->
+  <circle cx="60" cy="60" r="58" fill="none" stroke="#D4AF37" stroke-width="4"/>
+  
+  <!-- Kabuk (midye) gri tonu -->
+  <path d="M40 50 Q60 30 80 50 Q70 70 60 80 Q50 70 40 50 Z" fill="#B8A9A0" stroke="#A69B92" stroke-width="1.5"/>
+  <ellipse cx="60" cy="58" rx="8" ry="6" fill="#F4C2C2"/>
+  
+  <!-- Tüy kahverengi -->
+  <path d="M85 45 Q90 50 88 55 Q92 60 90 65 Q85 70 82 68" fill="none" stroke="#8B4513" stroke-width="3" stroke-linecap="round"/>
+  <path d="M88 55 Q90 58 89 62" fill="none" stroke="#8B4513" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- İç halka krem -->
+  <circle cx="60" cy="60" r="50" fill="#FDF6E3" opacity="0.8"/>
+  
+  <!-- Metinler -->
+  <text x="60" y="95" text-anchor="middle" font-family="serif" font-size="10" font-weight="bold" fill="#D4AF37">İnci Gençlik Topluluğu</text>
+  <text x="60" y="108" text-anchor="middle" font-family="serif" font-size="8" fill="#B8A9A0">Üniversite Sitesi - 2025</text>
+</svg>
