@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded',function(){
   // Etkinlik verilerini JSON dosyasından oku
   async function loadEvents() {
   try {
-    const response = await fetch('js/events.json');
+    const response = await fetch('../js/events.json');
     const data = await response.json();
     
     const eventsList = document.getElementById('eventsList');
