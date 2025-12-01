@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Yönlendirme</title>
+  <script>
+  fetch("https://ipapi.co/json/")
+    .then(res => res.json())
+    .then(data => {
+      const country = data.country;
+
+      // TR ise Türkçe siteye yönlendir
+      if (country === "TR") {
+        window.location.replace("/tr/");
+      } else {
+        // diğer ülkeler
+        window.location.replace("/en/");
+      }
+    });
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>
