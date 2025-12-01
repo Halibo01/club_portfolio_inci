@@ -3,28 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Yönlendirme</title>
-  <script>
-    async function redirectByCountry() {
-      try {
-        // IP tabanlı ülke tespiti API
-        const res = await fetch('https://ipapi.co/json/');
-        const data = await res.json();
-        const country = data.country_code; // Örnek: 'TR', 'US'
-
-        if (country === 'TR') {
-          window.location.href = '/tr/index.html';
-        } else {
-          window.location.href = '/en/index.html';
-        }
-      } catch (err) {
-        console.error(err);
-        // Hata olursa varsayılan sayfa
-        window.location.href = '/en/index.html';
-      }
-    }
-
-    redirectByCountry();
-  </script>
+  
 </head>
 <body>
   <p>Redirecting...</p>
