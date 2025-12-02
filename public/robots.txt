@@ -1,3 +1,4 @@
 # Just don't be a dick and try to hack a fucking university community website
+# Made by halil ibrahim sandıraz
 Allow: /
 Disallow: /private/
