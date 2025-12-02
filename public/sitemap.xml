@@ -1,2 +1,238 @@
-https://club-portfolio-inci.vercel.app/sitemap.xml
-https://club-portfolio-inci.vercel.app/robots.txt
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!--
+  ==============================================================================
+  CLUB PORTFOLIO INCi SITEMAP
+  ==============================================================================
+  Bu sitemap, INCi Kulübü'nün web sitesi için oluşturulmuştur.
+  Site, Türkçe ve İngilizce iki dilde hizmet vermektedir.
+  Son güncelleme: 2025-12-02
+  ==============================================================================
+  -->
+
+  <!--
+  ==============================================================================
+  ANA SAYFALAR
+  ==============================================================================
+  Siteye giriş noktaları ve ana navigasyon
+  ==============================================================================
+  -->
+
+  <url>
+    <loc>https://club-portfolio-inci.vercel.app/</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://club-portfolio-inci.vercel.app/images/logo.png</image:loc>
+      <image:caption>INCi Kulübü Logo</image:caption>
+      <image:title>INCi Club Logo</image:title>
+    </image:image>
+    <news:news>
+      <news:publication>
+        <news:name>INCi Kulübü</news:name>
+        <news:language>tr</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-02</news:publication_date>
+      <news:title>INCi Kulübü Web Sitesi</news:title>
+    </news:news>
+  </url>
+
+  <!--
+  ==============================================================================
+  DİL VERSİYONLARI
+  ==============================================================================
+  Türkçe ve İngilizce içerikler
+  ==============================================================================
+  -->
+
+  <url>
+    <loc>https://club-portfolio-inci.vercel.app/tr/</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <news:news>
+      <news:publication>
+        <news:name>INCi Kulübü</news:name>
+        <news:language>tr</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-02</news:publication_date>
+      <news:title>Türkçe Sürüm - INCi Kulübü</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://club-portfolio-inci.vercel.app/en/</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <news:news>
+      <news:publication>
+        <news:name>INCi Club</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-02</news:publication_date>
+      <news:title>English Version - INCi Club</news:title>
+    </news:news>
+  </url>
+
+  <!--
+  ==============================================================================
+  STATİK DOSYALAR
+  ==============================================================================
+  Site yapılandırması ve temel dosyalar
+  ==============================================================================
+  -->
+
+  <url>
+    <loc>https://club-portfolio-inci.vercel.app/robots.txt</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <news:news>
+      <news:publication>
+        <news:name>INCi Kulübü</news:name>
+        <news:language>tr</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-02</news:publication_date>
+      <news:title>Robots.txt Dosyası</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://club-portfolio-inci.vercel.app/sitemap.xml</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <news:news>
+      <news:publication>
+        <news:name>INCi Kulübü</news:name>
+        <news:language>tr</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-02</news:publication_date>
+      <news:title>Site Haritası</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://club-portfolio-inci.vercel.app/index.html</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <news:news>
+      <news:publication>
+        <news:name>INCi Kulübü</news:name>
+        <news:language>tr</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-02</news:publication_date>
+      <news:title>Yönlendirme Sayfası</news:title>
+    </news:news>
+  </url>
+
+  <!--
+  ==============================================================================
+  STİL VE JAVASCRIPT DOSYALARI
+  ==============================================================================
+  Site tasarımını ve işlevselliğini sağlayan dosyalar
+  ==============================================================================
+  -->
+
+  <url>
+    <loc>https://club-portfolio-inci.vercel.app/css/styles.css</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <news:news>
+      <news:publication>
+        <news:name>INCi Kulübü</news:name>
+        <news:language>tr</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-02</news:publication_date>
+      <news:title>Tasarım Dosyası</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://club-portfolio-inci.vercel.app/js/script.js</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <news:news>
+      <news:publication>
+        <news:name>INCi Kulübü</news:name>
+        <news:language>tr</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-02</news:publication_date>
+      <news:title>JavaScript Dosyası</news:title>
+    </news:news>
+  </url>
+
+  <!--
+  ==============================================================================
+  DİNAMİK İÇERİK
+  ==============================================================================
+  Etkinlikler ve güncel bilgiler
+  ==============================================================================
+  -->
+
+  <url>
+    <loc>https://club-portfolio-inci.vercel.app/js/events.json</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.4</priority>
+    <news:news>
+      <news:publication>
+        <news:name>INCi Kulübü</news:name>
+        <news:language>tr</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-02</news:publication_date>
+      <news:title>Etkinlik Verileri</news:title>
+    </news:news>
+  </url>
+
+  <!--
+  ==============================================================================
+  MEDYA DOSYALARI
+  ==============================================================================
+  Görsel ve medya içerikleri
+  ==============================================================================
+  -->
+
+  <url>
+    <loc>https://club-portfolio-inci.vercel.app/images/</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+    <news:news>
+      <news:publication>
+        <news:name>INCi Kulübü</news:name>
+        <news:language>tr</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-02</news:publication_date>
+      <news:title>Görsel İçerikler</news:title>
+    </news:news>
+  </url>
+
+  <!--
+  ==============================================================================
+  EK BİLGİLER
+  ==============================================================================
+  Site hakkında ek bilgiler:
+  
+  - Site Sahibi: INCi Kulübü
+  - Platform: Vercel üzerinde barındırılan statik site
+  - Diller: Türkçe (tr), İngilizce (en)
+  - İçerik Türü: Kulüp portföyü, etkinlikler, iletişim
+  - Güncelleme Sıklığı: Haftalık (içerik), Aylık (statik dosyalar)
+  - Hedef Kitle: Öğrenciler, akademisyenler, ziyaretçiler
+  ==============================================================================
+  -->
+
+</urlset>
